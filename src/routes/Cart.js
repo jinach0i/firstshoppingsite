@@ -1,5 +1,8 @@
 import Table from 'react-bootstrap/Table';
+import { useDispatch, useSelector } from 'react-redux';
 function Cart() {
+    let state=useSelector(state=>state.cart);
+    let dispatch=useDispatch();
     return(
         <Table responsive="lg">
         <thead>
@@ -14,24 +17,26 @@ function Cart() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+            <td></td>
+            <td><input type="number" min={1} step='1' placeholder='1'/><button onClick={() => {
+              {dispatch(state.plus())}
+            }}>+</button></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+            <td></td>
+            <td><button>+</button></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+            <td></td>
+            <td><button>+</button></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </Table>
