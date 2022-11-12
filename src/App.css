@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none; margin-right: 0.6rem;}
+button{border: none;}
+button.more-btn{display: block; margin: 0 auto; width: 80px; height: 31px;}
+#container{margin-top: 40px;}
+.main{background: url('../public/bg.png') no-repeat top center/100%; height: 60vh}
+.main p{text-align: center; font-weight: bold; font-size: 1.3rem; color: snow;}
+.loading_wrapper{text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.loading_wrapper .spinner-grow{width: 110px; height: 110px;}
+.card img{max-width: 60%;}
+.card img,.card-title,.card-text{cursor: pointer;}
