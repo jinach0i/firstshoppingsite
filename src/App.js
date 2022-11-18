@@ -1,11 +1,11 @@
 import './App.css';
 import {Cards, Item} from './routes/Details';
+import Products from './routes/Products';
 import Entrance from './routes/Entrance';
 import Cart from './routes/Cart';
 // libs cdn:
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
-import { Routes, Route, Link, Outlet } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 function App() {
   
@@ -17,8 +17,8 @@ function App() {
       <Link to="/cart">장바구니</Link>
       고로 이하 Routes로 대체: */}
       <Routes>
-        <Route path='/' element={<><Entrance /><Link to="products">상세페이지</Link></>} />
-        <Route path='/products' element={<Cards />} />
+        <Route path='/' element={<Entrance />} />
+        <Route path='/products' element={<Products />} />
         <Route path='/products/:productsp' element={<Item />} />
         <Route path='/about' element={<div>FIRST는...</div>} />
         <Route path='/cart' element={<Cart />} />

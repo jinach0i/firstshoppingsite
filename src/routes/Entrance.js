@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Spinner } from 'react-bootstrap';
@@ -12,6 +13,7 @@ function Entrance() {
       <div className='loading_wrapper'>
         <Spinner animation="grow" variant="info" />
       </div>
+      
     </>
   )
 }
